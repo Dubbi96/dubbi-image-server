@@ -5,9 +5,11 @@ spring:
     password: kang8349
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show-sql: true
     properties:
+      temp:
+        use_jdbc_metadata_defaults : false
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.MySQLDialect
